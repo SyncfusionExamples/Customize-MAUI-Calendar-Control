@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:calendar="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
+             x:Class="CalendarSample.MainPage">
+
+    <Grid>
+        <calendar:SfCalendar x:Name="calendar"
+                             EnablePastDates="False"
+                             Mode="Dialog"
+                             SelectionMode="Range"
+                             StartRangeSelectionBackground="#bc05f7" 
+                             EndRangeSelectionBackground="#bc05f7" 
+                             SelectionBackground="#e6a2fc"
+                             Identifier="Korean">
+            
+            <calendar:SfCalendar.HeaderView>
+                <calendar:CalendarHeaderView Background="#03516b">
+                    <calendar:CalendarHeaderView.TextStyle>
+                        <calendar:CalendarTextStyle TextColor="White" FontSize="14" />
+                    </calendar:CalendarHeaderView.TextStyle>
+                </calendar:CalendarHeaderView>
+            </calendar:SfCalendar.HeaderView>
+
+            <calendar:SfCalendar.MonthView>
+                <calendar:CalendarMonthView Background="#beedfa" 
+                                            TodayBackground="#54b2cc" 
+                                            TrailingLeadingDatesBackground="#A4DDED"
+                                            SpecialDatesBackground="LightCyan">
+                    <calendar:CalendarMonthView.TodayTextStyle>
+                        <calendar:CalendarTextStyle TextColor="White" />
+                    </calendar:CalendarMonthView.TodayTextStyle>
+                    <calendar:CalendarMonthView.TrailingLeadingDatesTextStyle>
+                        <calendar:CalendarTextStyle TextColor="#8c2804" FontSize="12"/>
+                    </calendar:CalendarMonthView.TrailingLeadingDatesTextStyle>
+                </calendar:CalendarMonthView>
+            </calendar:SfCalendar.MonthView>
+
+            <calendar:SfCalendar.YearView>
+                <calendar:CalendarYearView Background="#beedfa"  
+                                           TodayBackground="#54b2cc"
+                                           LeadingDatesBackground="#A4DDED">
+                    <calendar:CalendarYearView.TodayTextStyle>
+                        <calendar:CalendarTextStyle TextColor="White"/>
+                    </calendar:CalendarYearView.TodayTextStyle>
+                    <calendar:CalendarYearView.LeadingDatesTextStyle>
+                        <calendar:CalendarTextStyle TextColor="#8c2804" FontSize="12"/>
+                    </calendar:CalendarYearView.LeadingDatesTextStyle>
+                </calendar:CalendarYearView>
+            </calendar:SfCalendar.YearView>
+        </calendar:SfCalendar>
+
+        <Button x:Name="calendarButton"
+                Text="Open Calendar"
+                Clicked="Button_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                HeightRequest="50" 
+                WidthRequest="150">
+        </Button>
+    </Grid>
+</ContentPage>
