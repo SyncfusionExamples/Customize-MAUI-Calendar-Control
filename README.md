@@ -6,39 +6,6 @@ This sample demonstrates how to customize the MAUI Calendar Control in a .NET MA
 
 You'll also learn how to display the calendar in a pop-up window, customize the appearance of selected dates, and highlight special dates.
 
-## Requirements to run the demo
-
-To run the demo, refer to [System Requirements for .NET MAUI](https://help.syncfusion.com/maui/system-requirements)
-
-## Troubleshooting:
-### Path too long exception
-
-If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
-
-## How to run the sample
-
-1. Clone the sample and open it in Visual Studio 2022.
-   
-   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
-
-2. Register your license key in the App.cs file as demonstrated in the following code.
-
-		public App()
-		{
-			//Register Syncfusion license
-			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
-		
-			InitializeComponent();
-		
-			MainPage = new MainPage();
-		}
-		
-	Refer to this [link](https://help.syncfusion.com/maui/licensing/overview) for more details.
-	
-3. Clean and build the application.
-
-4. Run the application.
-
 ## Sample
 
 ```xaml
@@ -49,8 +16,7 @@ If you are facing path too long exception when building this example project, cl
                          SelectionMode="Range"
                          StartRangeSelectionBackground="#bc05f7" 
                          EndRangeSelectionBackground="#bc05f7" 
-                         SelectionBackground="#e6a2fc"
-                         Identifier="Korean">
+                         SelectionBackground="#e6a2fc">
         
         <calendar:SfCalendar.HeaderView>
             <calendar:CalendarHeaderView Background="#03516b">
@@ -98,6 +64,15 @@ If you are facing path too long exception when building this example project, cl
     </Button>
 </Grid>
 ```
+
+## Requirements to run the demo
+
+To run the demo, refer to [System Requirements for .NET MAUI](https://help.syncfusion.com/maui/system-requirements)
+
+## Troubleshooting:
+### Path too long exception
+
+If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
 
 ## License
 

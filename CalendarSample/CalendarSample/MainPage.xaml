@@ -11,8 +11,7 @@
                              SelectionMode="Range"
                              StartRangeSelectionBackground="#bc05f7" 
                              EndRangeSelectionBackground="#bc05f7" 
-                             SelectionBackground="#e6a2fc"
-                             Identifier="Korean">
+                             SelectionBackground="#e6a2fc">
             
             <calendar:SfCalendar.HeaderView>
                 <calendar:CalendarHeaderView Background="#03516b">
