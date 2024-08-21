@@ -14,7 +14,7 @@ namespace CalendarSample
                 {
                     CalendarIconDetails iconDetails = new CalendarIconDetails();
                     iconDetails.Icon = CalendarIcon.Heart;
-                    iconDetails.Fill = Colors.Red;
+                    iconDetails.Fill = Colors.DeepPink;
                     return iconDetails;
                 }
                 return null;

@@ -6,7 +6,7 @@
 
     <Grid>
         <calendar:SfCalendar x:Name="calendar"
-                             EnablePastDates="False"
+                             EnablePastDates="True"
                              Mode="Dialog"
                              SelectionMode="Range"
                              StartRangeSelectionBackground="#bc05f7" 
